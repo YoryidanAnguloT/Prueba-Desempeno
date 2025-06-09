@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic document setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web</title>
+    <!-- Linking the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with site title and navigation menu -->
+    <header>
+        <h1>Personal website</h1>
+        <nav class="menu">
+            <ul>
+                <!-- These links scroll to different sections of the page -->
+                <li><a class="about-me-css" href="#about-me">About Me</a></li>
+                <li><a class="my-projects-css" href="#my-projects">My Projects</a></li>
+                <li><a class="contact-css" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content of the site -->
+    <main>
+        <!-- About me section -->
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>Hi, I'm Yoryidan Angulo. I'm 17 years old and from Colombia. </p>
+            <p>I'm currently studying software development at Riwi. I really like soccer and food.</p>
+            <p>I am also a responsible, attentive person who likes to help others.</p>
+        </section>
+
+        <!-- Section that shows your projects -->
+        <section id="my-projects">
+            <h2>My Projects</h2>
+            <div class="grid-container">  
+                <!-- Each div below is one project card -->
+                <div class="grid-item">
+                    <h3>Project 1</h3>
+                    <img src="img/project1.png" width="450" alt="Project1">
+                </div>
+                <div class="grid-item">
+                    <h3>Project 2</h3>
+                    <img src="img/project2.png" width="450" alt="Project2">
+                </div>
+                <div class="grid-item">
+                    <h3>Project 3</h3>
+                    <img src="img/project3.png" width="450" alt="project3">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact form section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <!-- User's name -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <!-- User's email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <!-- User's message -->
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="2" required></textarea>
+                <!-- Submit button -->
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer with social media links -->
+    <footer class="footer">
+        <h2>Social networks</h2>
+        <a href="https://github.com/YoryidanAnguloT" target="_blank">GitHub</a>
+        <a href="https://facebook.com/yoryidan777" target="_blank">Facebook</a>
+        <a href="https://instagram.com/yoryidan777" target="_blank">Instagram</a>
+    </footer>
+</body>
+</html>
